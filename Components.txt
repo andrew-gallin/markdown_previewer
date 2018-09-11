@@ -1,0 +1,12 @@
+Components:
+
+Body
+
+Modal (state - normal size or expanded)
+	Editor
+		Header bar
+
+	Previewer
+		Header bar
+
+State : full_modal - default: false - displays both modals in default size. Textarea can be resized for editor`
