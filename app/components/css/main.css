@@ -7,10 +7,14 @@ body {
 h1, h2{
   font-family: 'Playfair Display';
 }
+p{
+  margin: 0;
+}
 
 textarea{
-  width: 100%;
+  width: 98%;
   resize: vertical;
+  background-color: gray;
 }
 
 th, td{
@@ -19,11 +23,33 @@ th, td{
 
 .toolbar{
     width:100%;
-    box-shadow: 0 0 20px gray;
+    border-bottom: solid black 1px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 10px;
+    background-color: green;
+}
+
+.tbElements p,
+.tbElements > {
+  display: inline-block;
+}
+
+.title{
+  display: inline-block;
 }
 
 .md_modal{
-  border: dashed black 2px;
-  width: 80%;
-  margin-left: 10%;
+  border: solid black 1px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  box-shadow: 0 0 10px black;
+}
+
+.preview_modal{
+  width: 70%;
+  margin-left: 15%;
+  box-shadow: 0 0 10px black;
+  border: solid black 1px;
 }

@@ -1,27 +1,20 @@
 import React from 'react'
 import marked from 'marked';
 import css from './css/main.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 
 const Toolbar = (props) => {
   return (
     <div className = 'toolbar' id = {props.id}>
       {
-        <p>{props.title}</p>
+        <div className = 'tbElements'><FontAwesomeIcon icon={faFreeCodeCamp}/><p className='title'>{props.title}</p></div>
       }
     </div>
   )
 }
 
-// class Toolbar extends React.Component {
-// 	constructor(props) {
-//     	super(props);
-//   	}
-//   render() {
-//     return (<div>
-//       <p>{props.title}</p>
-//     </div>);
-//   }
-// }
 
 class Markdown_Modal extends React.Component {
   constructor(props) {
