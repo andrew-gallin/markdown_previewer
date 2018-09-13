@@ -1,3 +1,16 @@
+html,
+body{
+  height: 100%;
+}
+
+.wrapper{
+  height: 100%;
+}
+
+#app{
+  height: 100%;
+}
+
 body {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   background-color: #b92c2c;
@@ -17,7 +30,7 @@ textarea{
   background-color: #b92c2c;
   min-height: 12em;
   border: none;
-  max-height: 24em;
+  height: 90%;
   overflow: hidden; 
 }
 textarea:hover{overflow: auto;}
@@ -42,6 +55,7 @@ th, td{
   display: inline-block;
   padding-right: .5em;
   padding-left: .5em;
+  padding-top: .1em;
 }
 
 .title{
@@ -69,6 +83,8 @@ th, td{
 .button{
   display: inline-block;
   float: right;
+  padding-right: .5em;
+  padding-top: .1em;
 }
 
 .modal_max{
