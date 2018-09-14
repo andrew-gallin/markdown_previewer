@@ -1,19 +1,13 @@
 html,
-body{
-  height: 100%;
-}
-
-.wrapper{
-  height: 100%;
-}
-
-#app{
+body,
+.wrapper,
+#app {
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
-  background-color: #b92c2c;
+  background-color: #619E9E;
   overflow: auto;
 }
 
@@ -24,31 +18,61 @@ p{
   margin: 0;
 }
 
+code {
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+pre {
+    background: white;
+    padding: 5px 0 5px 5px;
+  }
+
+#preview blockquote {
+  border-left: 3px solid #224B4B;
+  color: #224B4B;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
 textarea{
   width: 98%;
   resize: vertical;
-  background-color: #b92c2c;
+  background-color: #2CDA9D;
   min-height: 12em;
   border: none;
   height: 90%;
   overflow: hidden; 
 }
 textarea:hover{overflow: auto;}
-textarea::-webkit-scrollbar-track {background: #b92c2c;}
-textarea::-webkit-scrollbar-track-piece {background: #b92c2c;}
-textarea::-webkit-scrollbar {background: #b92c2c;}
+textarea::-webkit-scrollbar-track {background: #2CDA9D;}
+textarea::-webkit-scrollbar-track-piece {background: #2CDA9D;}
+textarea::-webkit-scrollbar {background: #2CDA9D;}
 textarea::-webkit-scrollbar-thumb {border-radius: 4px;}
 
-th, td{
-  border: solid black 1px;
+table{
+  border-collapse: collapse;
 }
+
+th, td{
+  border: 2px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.button:hover {
+  color: lighten(#2CDA9D, 10%);
+  cursor: pointer;
+  }
 
 .toolbar{
     width:100%;
     border-bottom: solid black 1px;
     box-shadow: 0 0 10px black;
     margin-bottom: 10px;
-    background-color: green;
+    background-color: #224B4B;
 }
 
 .fa-free-code-camp{
@@ -75,8 +99,8 @@ th, td{
 }
 
 .preview_modal{
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
   min-height: 12em;
 }
 
